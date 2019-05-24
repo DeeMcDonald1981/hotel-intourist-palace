@@ -69,9 +69,51 @@
     </div>
 </div>
 
-<div class="hero">
+<div class="hero clearfix">
     <div class="container">
 
+    </div>
+</div>
+
+<div class="rooms clearfix">
+    <div class="container">
+        <h3>latest room deals</h3>
+        <div class="row">
+            <div class="img_container">
+                <div class="booknow clearfix">
+                <p>book now! </p><i class="far fa-arrow-alt-circle-right"></i>
+                </div>
+                <img src="./img/couch-1835923_960_720.jpg" alt="">
+            </div>   
+
+            <h4>grand executive suited</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt non eligendi consectetur laborum voluptate autem voluptatem, est a repellendus ex repudiandae voluptas, perferendis nobis alias. Vitae veniam blanditiis repellat ducimus, iste dolore voluptate accusamus perspiciatis ea iure, suscipit ipsam!</p>
+        </div>
+
+        <div class="row">
+            <div class="img_container">
+            <div class="booknow">
+                    <p>book now! </p><i class="far fa-arrow-alt-circle-right"></i>
+                </div>
+                <img src="./img/bedroom-690129_960_720.jpg" alt="">
+            </div>   
+            <h4>Deluxe Room</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt non eligendi consectetur laborum voluptate autem voluptatem, est a repellendus ex repudiandae voluptas, perferendis nobis alias. Vitae veniam blanditiis repellat ducimus, iste dolore voluptate accusamus perspiciatis ea iure, suscipit ipsam!</p>
+
+        </div>
+
+        <div class="row">
+            <div class="img_container">
+            <div class="booknow">
+            <p>book now! </p><i class="far fa-arrow-alt-circle-right"></i>
+                </div>
+                <img src="./img/hotel-room-1447201_960_720.jpg" alt="">
+            </div>   
+
+            <h4>Traditional Room</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime incidunt non eligendi consectetur laborum voluptate autem voluptatem, est a repellendus ex repudiandae voluptas, perferendis nobis alias. Vitae veniam blanditiis repellat ducimus, iste dolore voluptate accusamus perspiciatis ea iure, suscipit ipsam!</p>
+
+        </div>
     </div>
 </div>
 

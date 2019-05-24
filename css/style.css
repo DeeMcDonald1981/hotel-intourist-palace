@@ -152,10 +152,19 @@
   text-decoration: none;
   display: inline-block; }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar .links a {
+    font-size: 12px; } }
+
 .hero {
-  background: url("../img/blonde-1867768_1280.jpg") center no-repeat;
+  background: url("../img/home-1622401_960_720.jpg") center no-repeat;
   background-size: cover;
-  height: 400px; }
+  height: 58vh;
+  margin-bottom: 2.1rem; }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 35vh; } }
 
 @media screen and (max-width: 992px) {
   .navbtn {
@@ -188,3 +197,84 @@
   .navbar .show {
     border-top: 2px solid #fff;
     height: 280px !important; } }
+
+.rooms h3 {
+  text-transform: capitalize;
+  margin-bottom: 15px; }
+
+.rooms h4 {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 100; }
+
+.rooms p {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #999999; }
+
+.row {
+  width: 32.3%;
+  float: left;
+  height: 250px; }
+
+.row .img_container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px; }
+
+.row .img_container .booknow {
+  width: 150px;
+  height: 65px;
+  position: absolute;
+  background: #badc58;
+  padding: 15px;
+  right: 0;
+  bottom: 0px;
+  text-align: center; }
+
+.row .img_container .booknow .fa-arrow-alt-circle-right {
+  font-size: 25px;
+  position: relative;
+  bottom: 13px;
+  cursor: pointer;
+  transition: 0.5s;
+  float: right;
+  color: #ffffff; }
+
+.row .img_container .booknow p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.5s; }
+
+.row .img_container .booknow p:hover {
+  color: #000; }
+
+.row .img_container img {
+  height: 100%;
+  margin-bottom: 15px;
+  width: 100%;
+  display: block; }
+
+.row:nth-of-type(2) {
+  margin-left: 1.5%;
+  margin-right: 1.5%; }
+
+@media screen and (max-width: 768px) {
+  .row {
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    float: none;
+    margin-bottom: 10%; }
+  .row:nth-of-type(2) {
+    margin-left: 0;
+    margin-right: 0; }
+  .row .img_container .booknow {
+    bottom: 15px; } }
