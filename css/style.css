@@ -517,7 +517,44 @@ body, html {
   cursor: pointer; }
 
 section {
-  margin-top: 1.5rem; }
+  margin: 3rem 0 5rem 0; }
 
 section .intro {
-  text-transform: uppercase; }
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3rem; }
+
+.carousel-container {
+  width: 715px;
+  margin: auto;
+  border: 5px solid #000000;
+  overflow: hidden;
+  position: relative; }
+
+.carousel-slide {
+  display: flex;
+  height: 500px; }
+
+.carousel-slide img {
+  display: block;
+  width: 100%; }
+
+#prevBtn, #nextBtn {
+  position: absolute;
+  z-index: 99;
+  background: #000;
+  top: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s; }
+
+#prevBtn:hover, #nextBtn:hover {
+  background: #444444; }
+
+#prevBtn {
+  padding: 20px;
+  left: 0; }
+
+#nextBtn {
+  padding: 20px;
+  right: 0; }
