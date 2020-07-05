@@ -11,6 +11,10 @@ body, html {
   width: 1200px;
   margin: 0 auto; }
 
+.row {
+  width: 100%;
+  margin: 1.5rem 0; }
+
 @media screen and (max-width: 420px) {
   .container {
     width: 100%;
@@ -36,7 +40,7 @@ body, html {
     width: 1140px;
     margin: 0 auto; } }
 
-.clearfix:after, .row:after, .footer:after, .footer .box:after {
+.clearfix:after, .container:after, .row:after, .column:after, .footer:after, .footer .box:after, .amenity:after, .who-we-are:after {
   content: '';
   height: 0;
   visibility: hidden;
@@ -154,8 +158,8 @@ body, html {
 .navbar .links a {
   font-family: serif;
   font-size: 14px;
-  width: 13.5%;
-  padding: 0px;
+  width: 19.5%;
+  padding: 0;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -167,10 +171,28 @@ body, html {
     font-size: 12px; } }
 
 .hero {
-  background: url("../img/hero.jpg") center no-repeat;
-  background-size: cover;
   height: 58vh;
-  margin-bottom: 2.1rem; }
+  margin-bottom: 2.1rem;
+  background: url("../img/hero.jpg") center no-repeat;
+  background-size: cover; }
+
+.hero2 {
+  height: 58vh;
+  margin-bottom: 2.1rem;
+  background: url("../img/hero2.jpg") center no-repeat;
+  background-size: cover; }
+
+.hero3 {
+  height: 58vh;
+  margin-bottom: 2.1rem;
+  background: url("../img/hero3.jpg") center no-repeat;
+  background-size: cover; }
+
+.hero4 {
+  height: 58vh;
+  margin-bottom: 2.1rem;
+  background: url("../img/hero4.jpg") center no-repeat;
+  background-size: cover; }
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -186,8 +208,6 @@ body, html {
   .navbtn .bars {
     border-bottom: 2px solid #fff;
     height: 7px; }
-  .navbar {
-    transition: 0.5s ease-in-out; }
   .navbar .links {
     z-index: 99;
     overflow: hidden;
@@ -232,19 +252,18 @@ body, html {
   padding-bottom: 15px;
   margin-bottom: 15px; }
 
-.row {
+.column {
   width: 32.3%;
-  float: left;
-  height: 250px; }
+  float: left; }
 
-.row .img_container {
+.column .img_container {
   height: 100%;
   overflow: hidden;
   position: relative;
   margin-bottom: 15px;
   cursor: pointer; }
 
-.row .img_container .overlay {
+.column .img_container .overlay {
   transition: opacity 0.3s;
   z-index: 99;
   position: absolute;
@@ -253,20 +272,21 @@ body, html {
   opacity: 0;
   background: #badc58; }
 
-.row .img_container .overlay:hover {
-  opacity: .6; }
+@media screen and (min-width: 768px) {
+  .column .img_container .overlay:hover {
+    opacity: .6; } }
 
-.row .img_container .booknow {
+.column .img_container .booknow {
   width: 150px;
   height: 65px;
   position: absolute;
   background: #718e1e;
   padding: 15px;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
   text-align: center; }
 
-.row .img_container .booknow .fa-arrow-alt-circle-right {
+.column .img_container .booknow .fa-arrow-alt-circle-right {
   font-size: 25px;
   position: relative;
   bottom: 13px;
@@ -275,7 +295,7 @@ body, html {
   float: right;
   color: #ffffff; }
 
-.row .img_container .booknow p {
+.column .img_container .booknow p {
   position: relative;
   top: 50%;
   left: 43%;
@@ -285,44 +305,44 @@ body, html {
   cursor: pointer;
   transition: 0.5s; }
 
-.row .img_container .booknow p:hover {
+.column .img_container .booknow p:hover {
   color: #000; }
 
-.row .img_container img {
+.column .img_container img {
   z-index: 99;
-  height: 100%;
+  height: 250px;
   margin-bottom: 15px;
   width: 100%;
   display: block; }
 
-.row:nth-of-type(2) {
+.column:nth-of-type(2) {
   margin-left: 1.5%;
   margin-right: 1.5%; }
 
-.row .ammenities p {
+.column .ammenities p {
   display: inline-block;
   padding-left: 15px;
   font-size: 12.5px; }
 
-.row .ammenities .fa-check-square {
+.column .ammenities .fa-check-square {
   font-size: 13px;
   color: #999999; }
 
-.row .ammenities .check_container {
+.column .ammenities .check_container {
   padding: 10px 0;
   border-bottom: 1px solid #cccccc; }
 
 @media screen and (max-width: 768px) {
-  .row {
+  .column {
     height: 100%;
     width: 100%;
     padding: 0 5px;
     float: none;
     margin-bottom: 10%; }
-  .row:nth-of-type(2) {
+  .column:nth-of-type(2) {
     margin-left: 0;
     margin-right: 0; }
-  .row .img_container .booknow {
+  .column .img_container .booknow {
     bottom: 15px; } }
 
 .testimonials {
@@ -404,7 +424,12 @@ body, html {
   border: none;
   padding: 12px 18px;
   color: #ffffff;
-  border-radius: 6px; }
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.5s; }
+
+.footer .box form [type=submit]:hover {
+  background: #aed63c; }
 
 .footer .box .gallery .gallery_row .gallery_box {
   position: relative;
@@ -524,6 +549,55 @@ section .intro {
   text-transform: uppercase;
   margin-bottom: 3rem; }
 
+.why-stay {
+  height: 225px;
+  padding: 3rem;
+  box-shadow: 1px 1px 15px 5px #ccc;
+  text-align: center; }
+
+.why-stay h3 {
+  font-weight: normal;
+  margin-top: 15px;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #6e6e6e;
+  font-size: 1.8rem; }
+
+.why-stay p {
+  line-height: 1.6; }
+
+@media screen and (max-width: 767px) {
+  .why-stay {
+    height: 100%; } }
+
+.amenity .left, .amenity .right {
+  border: 1px solid #ccc;
+  width: 50%;
+  min-height: 450px;
+  padding: 60px;
+  overflow: hidden; }
+
+@media screen and (max-width: 767px) {
+  .amenity .left, .amenity .right {
+    width: 100%; } }
+
+.amenity .left img, .amenity .right img {
+  display: block;
+  margin: 15px 0;
+  width: 100%; }
+
+.amenity .left h3, .amenity .right h3 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px; }
+
+.amenity .left {
+  float: right; }
+
+.amenity .right {
+  float: right; }
+
 .carousel-container {
   width: 715px;
   margin: auto;
@@ -531,12 +605,19 @@ section .intro {
   overflow: hidden;
   position: relative; }
 
+@media screen and (max-width: 767px) {
+  .carousel-container {
+    width: 340px; } }
+
 .carousel-slide {
   display: flex;
   height: 500px; }
 
+@media screen and (max-width: 767px) {
+  .carousel-slide {
+    height: 300px; } }
+
 .carousel-slide img {
-  display: block;
   width: 100%; }
 
 #prevBtn, #nextBtn {
@@ -558,3 +639,46 @@ section .intro {
 #nextBtn {
   padding: 20px;
   right: 0; }
+
+.who-we-are .box-left, .who-we-are .box-right {
+  width: 50%;
+  height: 100%;
+  height: 350px;
+  box-shadow: 1px 1px 15px 5px #ccc;
+  overflow: hidden; }
+
+@media screen and (max-width: 767px) {
+  .who-we-are .box-left, .who-we-are .box-right {
+    width: 100%;
+    float: none;
+    height: auto; } }
+
+.who-we-are .box-left img, .who-we-are .box-right img {
+  transition: 0.5s;
+  height: auto;
+  width: 100%;
+  cursor: pointer; }
+
+.who-we-are .box-left img:hover, .who-we-are .box-right img:hover {
+  transform: scale(1.1, 1.1); }
+
+.who-we-are .box-left {
+  float: left; }
+
+.who-we-are .box-right {
+  float: right; }
+
+.who-we-are .gp {
+  padding: 30px;
+  text-align: center; }
+
+.who-we-are .gp h3 {
+  margin-top: 25px;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  color: #6e6e6e;
+  font-size: 1.8rem; }
+
+.who-we-are .gp p {
+  line-height: 1.6; }

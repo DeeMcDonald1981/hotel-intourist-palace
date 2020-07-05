@@ -1,5 +1,6 @@
 <?php
 include('inc/header.php');
+include('inc/hero3.php');
 ?>
 <div class="container">
   <section id="about">

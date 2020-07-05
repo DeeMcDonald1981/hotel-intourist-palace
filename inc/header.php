@@ -56,11 +56,9 @@
     <div class="container">
       <div class="links">
         <a href="index.php">home</a>
-        <a href="accommodations.php">ACCOMMODATION</a>
-        <a href="about.php">ABOUT US</a>
+        <a href="amenities.php">amenities</a>
         <a href="gallery.php">GALLERY</a>
-        <a href="testimonial.php">TESTIMONIALS</a>
-        <a href="news.php">NEWS</a>
+        <a href="about.php">ABOUT US</a>
         <a class="contactLink" href="#footer">CONTACT US</a>
       </div>
       <div class="navbtn clearfix">

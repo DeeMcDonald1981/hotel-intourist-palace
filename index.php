@@ -6,7 +6,7 @@ include('inc/hero.php');
 <div class="rooms clearfix">
     <div class="container">
         <h3>latest room deals</h3>
-        <div class="row">
+        <div class="column">
             <div class="img_container">
                 <div class="overlay"></div>                
                 <div class="booknow clearfix">
@@ -36,9 +36,9 @@ include('inc/hero.php');
                     </div>
 
             </div>
-        </div><!-- row -->
+        </div><!-- column -->
 
-        <div class="row">
+        <div class="column">
             <div class="img_container">
                 <div class="overlay"></div>            
                 <div class="booknow">
@@ -69,9 +69,9 @@ include('inc/hero.php');
 
             </div>
 
-        </div><!-- row -->
+        </div><!-- column -->
 
-        <div class="row">
+        <div class="column">
             <div class="img_container clearfix">
             <div class="overlay"></div>
             <div class="booknow clearfix">
@@ -102,7 +102,7 @@ include('inc/hero.php');
 
             </div>
 
-        </div><!-- row -->
+        </div><!-- column -->
     </div><!-- container -->
 </div><!-- rooms -->
 
